@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "pokeduel",
+    "name": "PokeDuel",
+    "description": "SpongeForge Pixelmon plugin for allowing two players to queue up in a battle, with configurable options",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Lypaka"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
