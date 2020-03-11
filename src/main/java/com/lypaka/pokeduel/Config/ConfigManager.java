@@ -71,7 +71,7 @@ public class ConfigManager {
      * Saves the configuration settings to configuration file.
      */
     public static void save(){
-        Task save = Task.builder().execute(() -> {
+        Task.builder().execute(() -> {
 
             try{
                 configLoad.save(configNode);

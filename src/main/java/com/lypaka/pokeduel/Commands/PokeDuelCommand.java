@@ -1,16 +1,14 @@
 package com.lypaka.pokeduel.Commands;
 
-import com.lypaka.pokeduel.Config.ConfigChecker;
-import com.lypaka.pokeduel.Config.ConfigSetter;
-import com.lypaka.pokeduel.PokeDuel;
-import com.lypaka.pokeduel.Utils.BattleStarter;
+import java.math.BigDecimal;
+import java.util.Optional;
+
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.command.CommandResult;
 import org.spongepowered.api.command.args.GenericArguments;
 import org.spongepowered.api.command.source.ConsoleSource;
 import org.spongepowered.api.command.spec.CommandSpec;
 import org.spongepowered.api.entity.living.player.Player;
-import org.spongepowered.api.event.SpongeEventFactory;
 import org.spongepowered.api.event.cause.Cause;
 import org.spongepowered.api.event.cause.EventContext;
 import org.spongepowered.api.event.cause.EventContextKeys;
@@ -21,8 +19,10 @@ import org.spongepowered.api.text.Text;
 import org.spongepowered.api.text.action.TextActions;
 import org.spongepowered.api.text.format.TextColors;
 
-import java.math.BigDecimal;
-import java.util.Optional;
+import com.lypaka.pokeduel.PokeDuel;
+import com.lypaka.pokeduel.Config.ConfigChecker;
+import com.lypaka.pokeduel.Config.ConfigSetter;
+import com.lypaka.pokeduel.Utils.BattleStarter;
 
 public class PokeDuelCommand {
 
@@ -177,7 +177,7 @@ public class PokeDuelCommand {
                 .executor((sender, context) -> {
 
                     Player receiver = (Player) sender;
-                    Player challenger = (Player) context.getOne("player").get();
+                   // Player challenger = (Player) context.getOne("player").get();
                     Player challenger2 = Sponge.getServer().getPlayer(receiver.getName()).get();
 
 

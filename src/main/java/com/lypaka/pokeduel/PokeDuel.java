@@ -18,7 +18,11 @@ import java.nio.file.Path;
 @Plugin(
         id = "pokeduel",
         name = "PokeDuel",
-        version = "2019.2-1.3.2"
+        version = "2019.2-1.3.2-DaeM0nS-Reforged",
+        authors = {
+        		"Lypaka",
+        		"DaeM0nS"
+        }
 )
 public class PokeDuel {
 
